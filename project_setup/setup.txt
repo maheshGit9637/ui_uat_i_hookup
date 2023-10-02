@@ -1,0 +1,14 @@
+cd Desktop
+mkdir project05
+cd project05
+npm init -y
+cls
+npm install webdriverio
+npx wdio config -y
+ npm run wdio
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/maheshGit9637/ui_uat_i_hookup.git
+git push -u origin master
+doskey /history
