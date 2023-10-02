@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "execute": "npx wdio wdio.conf.js --spec",
+    "runSuite": "npx wdio wdio.conf.js --suite"
   },
   "keywords": [],
   "author": "",

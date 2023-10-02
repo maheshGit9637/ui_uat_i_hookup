@@ -13,3 +13,4 @@ describe('My Login application', () => {
     })
 })
 
+//npx run wdio run your tests

@@ -24,6 +24,15 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    //npx wdio wdio.conf.js --spec test\specs\test.e2e.js
+    //npm run execute test\specs\test.e2e.js
+
+    suites: {
+        testSuite: [
+            './test/specs/test.e2e.js', // Add your Chrome-specific test files here
+        ],
+        // Other suites for different browsers or scenarios
+    },//npx wdio wdio.conf.js --suite chrome or npm run runSuite Form_Authentication i.e. npm run runSuite <suitename>
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -62,7 +71,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
