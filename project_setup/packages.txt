@@ -9,3 +9,9 @@ reporters: ['spec',
             disableWebdriverScreenshotsReporting:true,
         }],
     ],
+
+install allure command line gloabally
+npm install -g allure-commandline --save-dev
+
+run allure command to generate html report
+allure generate ; allure open 
