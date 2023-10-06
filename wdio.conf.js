@@ -135,17 +135,17 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [
          'spec',
-         ['light',{
-            outputDir: './Results',
-            outputFile:`demo.html`,    // html report file will be name this 
-            addScreenshots: false,   // to add screenshots in report make it as true. Default is false
-        }],
-        ['junit', {
-            outputDir: './Reports/JUnit',
-            outputFileFormat: function(options) { // optional
-                return `JunitReport.xml`
-            }
-        }]
+        //  ['light',{
+        //     outputDir: './Results',
+        //     outputFile:'demo.html',    // html report file will be name this 
+        //     addScreenshots: false,   // to add screenshots in report make it as true. Default is false
+        // }],
+        // ['junit', {
+        //     outputDir: './Reports/JUnit',
+        //     outputFileFormat: function(options) { // optional
+        //         return `JunitReport.xml`
+        //     }
+        // }]
     ],
 
     
