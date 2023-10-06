@@ -135,6 +135,11 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [
          'spec',
+         ['light',{
+            outputDir: './Results',
+            outputFile:`demo.html`,    // html report file will be name this 
+            addScreenshots: false,   // to add screenshots in report make it as true. Default is false
+        }],
         ['junit', {
             outputDir: './Reports/JUnit',
             outputFileFormat: function(options) { // optional
@@ -289,8 +294,10 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    // onComplete: function(exitCode, config, capabilities, results) {
-    // },
+    onComplete: function (exitCode, config, capabilities, results) {
+        const mergeResults = require("wdio-light-reporter/src/mergeResults"); //you can add this on top of the file
+        mergeResults("./Results");
+     },
     /**
     * Gets executed when a refresh happens.
     * @param {string} oldSessionId session ID of the old session
