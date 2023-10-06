@@ -133,20 +133,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [
-         'spec',
-        //  ['light',{
-        //     outputDir: './Results',
-        //     outputFile:'demo.html',    // html report file will be name this 
-        //     addScreenshots: false,   // to add screenshots in report make it as true. Default is false
-        // }],
-        // ['junit', {
-        //     outputDir: './Reports/JUnit',
-        //     outputFileFormat: function(options) { // optional
-        //         return `JunitReport.xml`
-        //     }
-        // }]
-    ],
+    reporters: ['spec',
+    ['allure', {
+        outputDir: 'allure-results', // Specify the directory where Allure report files will be generated
+        disableWebdriverStepsReporting: true, // Set to true to disable WebDriver steps reporting (optional)
+        disableWebdriverScreenshotsReporting:true,
+    }],
+],
 
     
     //

@@ -1,7 +1,7 @@
 allure reporter
 #install allure reporter
 #npm install @wdio/allure-reporter --save-dev --force
-
+#add config in wdio.conf.js
 reporters: ['spec',
         ['allure', {
             outputDir: 'allure-results', // Specify the directory where Allure report files will be generated
