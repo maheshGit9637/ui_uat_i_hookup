@@ -1,3 +1,4 @@
+#--------------------------------------------------------------------------------------#
 allure reporter
 #install allure reporter
 #npm install @wdio/allure-reporter --save-dev --force
@@ -15,3 +16,4 @@ npm install -g allure-commandline --save-dev
 
 run allure command to generate html report
 allure generate ; allure open 
+#--------------------------------------------------------------------------------------#
