@@ -1,6 +1,6 @@
 const { expect } = require("@wdio/globals");
-const LoginPage = require("../pageobjects/login.page");
-const HomePage = require("../pageobjects/homePage");
+const LoginPage = require("../pageobjects/basePage/login.page");
+const HomePage = require("../pageobjects/homePage/homePage");
 
 describe("My Login application", () => {
   it("should be able to open the website and browse", async() => {

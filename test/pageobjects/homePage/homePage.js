@@ -1,5 +1,5 @@
 const { $ } = require("@wdio/globals");
-const Page = require("./page");
+
 
 const SELECTORS = {
   head1: "h1",
