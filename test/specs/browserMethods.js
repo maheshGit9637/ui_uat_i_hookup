@@ -5,7 +5,7 @@ const HomePage = require("../pageobjects/homePage");
 describe("My Login application", () => {
   it("should be able to open the website and browse", async() => {
     await LoginPage.open()
-    console.log("header on page is: ", await HomePage.headers1());
+    console.log("header on page is: ", await HomePage.header1());
   });
   it("Maximize the window", async() => {
     await browser.maximizeWindow();
