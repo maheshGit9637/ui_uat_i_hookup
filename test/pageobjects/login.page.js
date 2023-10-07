@@ -29,13 +29,16 @@ class LoginPage extends Page {
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
     }
+    async scrollToBottom(){
+        await browser.scroll(0,500);
+     }
+
+    
 
     /**
      * overwrite specific options to adapt it to page object
      */
-    open () {
-        return super.open('login');
-    }
+  
 }
 
 module.exports = new LoginPage();

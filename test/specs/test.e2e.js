@@ -1,16 +1,14 @@
 const { expect } = require('@wdio/globals')
-const LoginPage = require('../pageobjects/login.page')
-const SecurePage = require('../pageobjects/secure.page')
+const LoginPage = require('../pageobjects/login.page');
+ 
 
 describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
+    it('should be able to open the website and browse', async () => {
         await LoginPage.open()
-
-        await LoginPage.login('tomsmith', 'SuperSecretPassword!')
-        await expect(SecurePage.flashAlert).toBeExisting()
-        await expect(SecurePage.flashAlert).toHaveTextContaining(
-            'You logged into a secure area!')
+        await browser.maximizeWindow();//set full size of window
+        await browser.pause(7000);
+        await browser.setWindowSize(1200, 800);//set specific window size
+        await browser.minimizeWindow();
+        await browser.pause(7000);
     })
 })
-
-//npx run wdio run your tests
