@@ -1,6 +1,7 @@
 cd Desktop
 mkdir project05
 cd project05
+cd C:\Users\mahesh shelke\Desktop\WebDriverIOAutomation\ui_uat_i_hookup
 npm init -y
 cls
 npm install webdriverio
