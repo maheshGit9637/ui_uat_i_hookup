@@ -4,6 +4,9 @@ const HomePage = require("../pageobjects/homePage/homePage");
 
 describe("My Login application", () => {
   it("should be able to open the website and browse", async() => {
+    await browser.url('https://www.google.co.in');
+  }); 
+  it("should be able to open the website and browse", async() => {
     await LoginPage.open()
     console.log("header on page is: ", await HomePage.header1());
   });
