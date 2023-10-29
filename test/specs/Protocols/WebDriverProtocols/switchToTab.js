@@ -1,4 +1,4 @@
-const LoginPage = require("../../pageobjects/basePage/login.page");
+const LoginPage = require("../../../pageobjects/basePage/login.page");
 
 describe("browser methods", () => {
   before(async () => {
@@ -26,7 +26,5 @@ describe("browser methods", () => {
     await browser.switchToWindow(tabs[0]);
     await browser.pause(4000); // Pause for 2 seconds
     console.log("how many tabs are there? : ",tabs.length);
-
-
   });
 });
